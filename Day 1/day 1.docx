@@ -7,3 +7,7 @@ In Matplotlib there are two ways of plotting
 2. Object Oriented Plotting
 
 The Pyplot one as per the official documentation of Matplotlib is likely to be less flexible
+
+On the other hand, the object-oriented one is more robust and recommended In general, use the explicit interface over the implicit pyplot interface for plotting.
+
+In the notebook we have used 3 types of plotting but going forward we will be using the 3rd method 
