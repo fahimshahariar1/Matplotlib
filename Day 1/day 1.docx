@@ -1,3 +1,9 @@
 Day 1 of Matplotlib.
 
 Today we will look into the absolute basics. Importing and plotting and ways of plotting
+
+In Matplotlib there are two ways of plotting
+1. Pyplot
+2. Object Oriented Plotting
+
+The Pyplot one as per the official documentation of Matplotlib is likely to be less flexible
