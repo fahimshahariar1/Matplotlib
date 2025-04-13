@@ -3,3 +3,8 @@ On Day 2, we are going to look into an example workflow of matplotlib
 The basic workflow would be first to import matpoltlib
 
 import matplotlib.pyplot as plt
+
+Then we need to create some data such as
+x = [1, 2, 3, 4]
+y = [11, 22, 33, 44]
+
