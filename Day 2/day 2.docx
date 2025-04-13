@@ -19,3 +19,9 @@ After that give some titles and labels to make it look better for visualisation
 ax.set(title="Simple Plot",
       xlabel="x-axis",
       ylabel="y-axis")
+
+Finally save it to your preferred location 
+
+fig.savefig("\\Matplotlib\\Images/sample-plot.png")
+
+This is the basic workflow of Matplotlib
