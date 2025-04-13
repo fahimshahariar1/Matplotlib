@@ -1,1 +1,5 @@
 On Day 2, we are going to look into an example workflow of matplotlib
+
+The basic workflow would be first to import matpoltlib
+
+import matplotlib.pyplot as plt
