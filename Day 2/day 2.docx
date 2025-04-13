@@ -8,3 +8,14 @@ Then we need to create some data such as
 x = [1, 2, 3, 4]
 y = [11, 22, 33, 44]
 
+Then we will give the figure a size (width, height)
+
+fig, ax = plt.subplots(figsize=(10,10))
+
+Then plot the data in the axes
+ax.plot(x,y)
+
+After that give some titles and labels to make it look better for visualisation
+ax.set(title="Simple Plot",
+      xlabel="x-axis",
+      ylabel="y-axis")
