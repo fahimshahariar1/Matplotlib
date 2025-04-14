@@ -1,16 +1,16 @@
 So on day 3, we will be learning how we can make figures from numpy arrays
 
-For that, obviously, first we need to import the libraries 
+For that, first we need to import the libraries 
 import numpy as np
 import matplotlib.pyplot as plt
 
 then we will create some data x = np.linspace(0, 10, 100) using numpy.
-remember if you don't know about something press shift+tab or read the documentation
-In this case linspace = Return evenly spaced numbers over a specified interval
+Remember, if you don't know about something press shift+tab or read the documentation
+In this case, linspace = Return evenly spaced numbers over a specified interval
 
-here 0 is the start and 10 is the stop value and it will create 100 values in between
+Here, 0 is the start value, and 10 is the stop value, and it will create 100 values in between
 
-Then we will plot it 
+Then, we will plot it 
 fig, ax = plt.subplots()
 ax.plot(x, x**2) and this will return a basic line shape figure
 
@@ -18,7 +18,7 @@ We can also create a scatter plot using the same data
 fig, ax = plt.subplots()
 ax.scatter(x, x**2)
 
-and finally we can create a bar figure as well
+Finally, we can create a bar figure as well
 
 car_prices = {"Toyota": 100,
              "Honda": 200,
@@ -27,3 +27,4 @@ car_prices = {"Toyota": 100,
 fig, ax = plt.subplots()
 ax.bar(car_prices.keys(), car_prices.values())
 
+The main difference here is the ax.bar/scatter/plot. ,See we are just changing this part, and based on that, we are getting different types of figures
