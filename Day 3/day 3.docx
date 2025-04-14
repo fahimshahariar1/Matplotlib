@@ -17,3 +17,13 @@ ax.plot(x, x**2) and this will return a basic line shape figure
 We can also create a scatter plot using the same data 
 fig, ax = plt.subplots()
 ax.scatter(x, x**2)
+
+and finally we can create a bar figure as well
+
+car_prices = {"Toyota": 100,
+             "Honda": 200,
+             "BMW": 500}
+
+fig, ax = plt.subplots()
+ax.bar(car_prices.keys(), car_prices.values())
+
