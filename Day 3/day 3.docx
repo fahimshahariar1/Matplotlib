@@ -1,1 +1,11 @@
-So on day 3 we will be learning how we can make figures from numpy arrays
+So on day 3, we will be learning how we can make figures from numpy arrays
+
+For that, obviously, first we need to import the libraries 
+import numpy as np
+import matplotlib.pyplot as plt
+
+then we will create some data x = np.linspace(0, 10, 100) using numpy.
+remember if you don't know about something press shift+tab or read the documentation
+In this case linspace = Return evenly spaced numbers over a specified interval
+
+here 0 is the start and 10 is the stop value and it will create 100 values in between
