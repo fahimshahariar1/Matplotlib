@@ -9,3 +9,11 @@ remember if you don't know about something press shift+tab or read the documenta
 In this case linspace = Return evenly spaced numbers over a specified interval
 
 here 0 is the start and 10 is the stop value and it will create 100 values in between
+
+Then we will plot it 
+fig, ax = plt.subplots()
+ax.plot(x, x**2) and this will return a basic line shape figure
+
+We can also create a scatter plot using the same data 
+fig, ax = plt.subplots()
+ax.scatter(x, x**2)
