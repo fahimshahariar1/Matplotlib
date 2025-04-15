@@ -4,3 +4,11 @@ The first thing that we are going to look at is how we can make the bar that we 
 
 to do that ax.barh(list(car_prices.keys()), list(car_prices.values())) we will use this command. 
 The difference between this and the previous one is for this we need to convert each of the key and value as list 
+
+Next we will see how can we created Histogram.
+We can create histogram by this command
+x = np.random.randn(1000)
+fig, ax = plt.subplots()
+ax.hist(x)
+
+where we are using randn from numpy which Return a sample (or samples) from the "standard normal" distribution.
