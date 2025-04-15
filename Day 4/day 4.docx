@@ -12,3 +12,17 @@ fig, ax = plt.subplots()
 ax.hist(x)
 
 where we are using randn from numpy which Return a sample (or samples) from the "standard normal" distribution.
+
+Lastly we will see how we can create multiple axis into one figure 
+fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows=2, ncols=2, figsize = (10,5)) this will create 4 axis into one figure
+To plot inside this axis we can use multiple plotting
+
+ax1.plot(x, x/2)
+ax2.scatter(np.random.random(10), np.random.random(10))
+ax3.bar(car_prices.keys(), car_prices.values())
+ax4.hist(np.random.randn(1000))
+
+for axis 1 we are just simply ploting x
+for axis 2 we are plotting scatter plot and then bar and histogram for axis 3 and 4 serially
+
+chcek the notebook for more info
