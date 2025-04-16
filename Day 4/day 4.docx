@@ -28,3 +28,12 @@ for axis 2 we are plotting scatter plot and then bar and histogram for axis 3 an
 chcek the notebook for more info.
 
 There is another way of plotiing to dfferent axis
+
+We can do that by using the index of the axis
+fig, ax = plt.subplots(nrows=2, ncols=2, figsize = (10,5)) we will first create the figure as we do for normal figures
+
+then indicating to each index we will set the plots as like this
+ax[0,0].plot(x, x/2)
+ax[0,1].scatter(np.random.random(10), np.random.random(10))
+ax[1,0].bar(car_prices.keys(), car_prices.values())
+ax[1,1].hist(np.random.randn(1000))
