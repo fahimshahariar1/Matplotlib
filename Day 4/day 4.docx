@@ -25,4 +25,6 @@ ax4.hist(np.random.randn(1000))
 for axis 1 we are just simply ploting x
 for axis 2 we are plotting scatter plot and then bar and histogram for axis 3 and 4 serially
 
-chcek the notebook for more info
+chcek the notebook for more info.
+
+There is another way of plotiing to dfferent axis
