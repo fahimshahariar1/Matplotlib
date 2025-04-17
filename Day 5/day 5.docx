@@ -1,1 +1,3 @@
-Today we will see how we can create figures or plots from Pandas Dataframe. Usually pandas will be our go to system to create the figure and plots
+Today, we will see how we can create figures or plots using Pandas Dataframe. Usually pandas will be our go to system to make the figure and plots
+
+To do that we will use our trusted car_sales.csv that we used before in Pandas. which you can also find in the resources tab
