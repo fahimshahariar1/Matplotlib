@@ -4,3 +4,8 @@ To do that we will use our trusted car_sales.csv that we used before in Pandas. 
 after importing the car_sales file we will try to remove the characters that we have in the price column because we will need to do some artihmetic opearations on them.
 
 So we can remove them using the .replace() function of Pandas
+car_sales["Price"] = car_sales["Price"].str.replace('[$, .]', '', regex=True)
+Remember to always use regex=True unless it will show error. 
+
+After running this you will see the extra characters are removed but the extra zeros that we had after the period that is also added which now giving us a wrong value.
+So, to remove the extra zeros we will use car_sales["Price"] = car_sales["Price"].str[:-2]
