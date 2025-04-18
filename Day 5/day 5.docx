@@ -1,6 +1,6 @@
 Today, we will see how we can create figures or plots using Pandas Dataframe. Usually pandas will be our go to system to make the figure and plots
 
-To do that we will use our trusted car_sales.csv that we used before in Pandas. which you can also find in the resources tab
+To do that, we will use our trusted car_sales.csv, which we used before in Pandas. which you can also find in the resources tab
 after importing the car_sales file we will try to remove the characters that we have in the price column because we will need to do some artihmetic opearations on them.
 
 So we can remove them using the .replace() function of Pandas
@@ -14,3 +14,17 @@ This will remove the extra 2 zeros from the back
 Next up we will add two new columns
 1. Date Range - car_sales["Sale Date"] = pd.date_range("1/1/2025", periods=len(car_sales)). Date range will give us a range of dates according to the set periods in this case for each row of our car_sales
 2. Cumulative Sum / cumsum - car_sales["Total Sales"] = car_sales["Price"].astype(int).cumsum(). Cumulative Sum or cumsum will add all the values of a particular column and give us the total value
+
+Now we can simply plot this.
+
+look carefully in order to plot this we are not importing or using matplotlib; we are doing it by Pandas itself
+, car_sales.plot(x = "Sale Date", y = "Total Sales");
+This will give us a simple plot 
+
+car_sales.plot(x = "Odometer (KM)", y = "Price", kind="scatter");
+and this would give us a scatter plot using pandas
+
+Isn't this awesome.
+
+We will look into it further next time
+Till then practise more
