@@ -9,3 +9,8 @@ Remember to always use regex=True unless it will show error.
 
 After running this you will see the extra characters are removed but the extra zeros that we had after the period that is also added which now giving us a wrong value.
 So, to remove the extra zeros we will use car_sales["Price"] = car_sales["Price"].str[:-2]
+This will remove the extra 2 zeros from the back
+
+Next up we will add two new columns
+1. Date Range - car_sales["Sale Date"] = pd.date_range("1/1/2025", periods=len(car_sales)). Date range will give us a range of dates according to the set periods in this case for each row of our car_sales
+2. Cumulative Sum / cumsum - car_sales["Total Sales"] = car_sales["Price"].astype(int).cumsum(). Cumulative Sum or cumsum will add all the values of a particular column and give us the total value
