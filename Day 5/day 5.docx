@@ -26,5 +26,5 @@ and this would give us a scatter plot using pandas
 
 Isn't this awesome.
 
-We will look into it further next time
-Till then practise more
+Similar to scatter and normal plot we can also plot bar and histogram 
+Which we are going to look into today
