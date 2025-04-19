@@ -28,3 +28,7 @@ Isn't this awesome.
 
 Similar to scatter and normal plot we can also plot bar and histogram 
 Which we are going to look into today
+car_sales.plot(x = "Make", y = "Odometer (KM)", kind = "bar");
+
+then definitely we can do histogram as well
+car_sales["Odometer (KM)"].plot(kind="hist");
