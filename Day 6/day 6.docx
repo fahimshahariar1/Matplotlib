@@ -4,3 +4,6 @@ Today we will be using a Heart Diesease dataset that you can find in the resourc
 first as usual we will import pandas as read the csv. as it is a big dataset we will use the head() function to get the first 5 rows of data from the dataset
 heart_disease = pd.read_csv("heart-disease.csv")
 heart_disease.head()
+
+Then supposedly if we want to plot a histogram using the Age column of the dataset we can do it by using this command 
+heart_disease["age"].plot.hist()
