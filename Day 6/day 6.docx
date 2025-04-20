@@ -1,1 +1,6 @@
 I know this might be bit confusing so on Day 6 we are going to just try to recap all the things but on a different Dataset
+
+Today we will be using a Heart Diesease dataset that you can find in the resources folder
+first as usual we will import pandas as read the csv. as it is a big dataset we will use the head() function to get the first 5 rows of data from the dataset
+heart_disease = pd.read_csv("heart-disease.csv")
+heart_disease.head()
