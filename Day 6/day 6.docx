@@ -7,3 +7,9 @@ heart_disease.head()
 
 Then supposedly if we want to plot a histogram using the Age column of the dataset we can do it by using this command 
 heart_disease["age"].plot.hist()
+
+Now, what if we plot all the columns and data together?
+To do that we will use heart_disease.head().plot(figsize=(10,30), subplots = True, kind = "hist");
+this command where we are mentioning pandas to plot all the subplots into one figure
+
+This might not be such an useful thing but definitely necessary for other works in the future
