@@ -18,3 +18,4 @@ Now you might raise a question that we got to know about matplotlib and now we a
 
 Right question to have, and if we have to simply answer that. we can say
 * if you need something simple, just to visualise and understand whats going on then use pyplot
+* if you need something more advanced and features in the visualisation then use OO method of matplotlib
