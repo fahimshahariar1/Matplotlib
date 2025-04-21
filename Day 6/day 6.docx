@@ -15,3 +15,6 @@ this command where we are mentioning pandas to plot all the subplots into one fi
 This might not be such an useful thing but definitely necessary for other works in the future
 
 Now you might raise a question that we got to know about matplotlib and now we are working with pandas plotting. then which one should we use?
+
+Right question to have, and if we have to simply answer that. we can say
+* if you need something simple, just to visualise and understand whats going on then use pyplot
