@@ -13,3 +13,5 @@ To do that we will use heart_disease.head().plot(figsize=(10,30), subplots = Tru
 this command where we are mentioning pandas to plot all the subplots into one figure
 
 This might not be such an useful thing but definitely necessary for other works in the future
+
+Now you might raise a question that we got to know about matplotlib and now we are working with pandas plotting. then which one should we use?
