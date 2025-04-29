@@ -8,3 +8,14 @@ over_50.plot(kind="scatter",
              c="target",
             ax=ax);
 
+This gives us a good figure but still, it's missing lots of things. So lets now make one using the OO method from scratch
+
+We will first create the figure and size of it
+fig, ax = plt.subplots(figsize=(10, 6))
+
+then plot the labels and values that need to be used
+scatter = ax.scatter(x=over_50["age"],
+                     y=over_50["chol"],
+                     c=over_50["target"])
+
+
