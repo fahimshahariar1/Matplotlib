@@ -1,1 +1,10 @@
-We have used the pandas plotting system or methods to work and plot different figures. But now we will be looking at the OO / object oriented method of Matplotlib to plot more adavanced figures
+We have used the pandas plotting system or methods to work and plot different figures. But now we will be looking at the OO / object-oriented method of Matplotlib to plot more advanced figures.
+
+Let's first create a figure from the heart disease data using OO method mixed with pyplot
+fig, ax = plt.subplots(figsize=(10,6))
+over_50.plot(kind="scatter",
+            x="age",
+            y="chol",
+             c="target",
+            ax=ax);
+
