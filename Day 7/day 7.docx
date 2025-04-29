@@ -18,4 +18,17 @@ scatter = ax.scatter(x=over_50["age"],
                      y=over_50["chol"],
                      c=over_50["target"])
 
+then we will add some details to our figure
+ax.set(title="Heart Disease and Cholesterol levels",
+      xlabel="Age",
+      ylabel="Cholesterol")
 
+We can also put some more information as well 
+
+This will create a legend to understand the target
+ax.legend(*scatter.legend_elements(), title="Target");
+
+and this will create a dash line in the y axis as the mean value of chol
+ax.axhline(y=over_50["chol"].mean(), linestyle='--');
+
+These and more things we can do using the OO mehod of amtplotlib
