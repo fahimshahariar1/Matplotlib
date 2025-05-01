@@ -32,3 +32,5 @@ and this will create a dash line in the y axis as the mean value of chol
 ax.axhline(y=over_50["chol"].mean(), linestyle='--');
 
 These and more things we can do using the OO mehod of amtplotlib
+
+Now what if we want to use a different column rather than the chol column. simple we can do that as well 
