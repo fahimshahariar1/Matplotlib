@@ -51,8 +51,6 @@ ax0.legend(*scatter.legend_elements(), title="Target");
 ax0.axhline(y=over_50["chol"].mean(), linestyle='--');
 
 
-
-
 #adding data to ax1
 scatter = ax1.scatter(x = over_50["age"],
                      y = over_50["thalach"],
