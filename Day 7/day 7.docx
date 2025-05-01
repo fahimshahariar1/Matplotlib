@@ -34,3 +34,35 @@ ax.axhline(y=over_50["chol"].mean(), linestyle='--');
 These and more things we can do using the OO mehod of amtplotlib
 
 Now what if we want to use a different column rather than the chol column. simple we can do that as well 
+
+We will create a figure but that will have two axes where we will add two different figures
+
+fig, (ax0, ax1) = plt.subplots(figsize = (10,10), nrows=2, ncols=1, sharex=True)
+
+scatter = ax0.scatter(x=over_50["age"],
+                     y=over_50["chol"],
+                     c=over_50["target"])
+
+ax0.set(title="Heart Disease and Cholesterol levels",
+      ylabel="Cholesterol")
+
+ax0.legend(*scatter.legend_elements(), title="Target");
+
+ax0.axhline(y=over_50["chol"].mean(), linestyle='--');
+
+
+
+
+#adding data to ax1
+scatter = ax1.scatter(x = over_50["age"],
+                     y = over_50["thalach"],
+                     c = over_50["target"]);
+#style the figure
+ax1.set(title="Heart Diesease and Heart Rate Levels",
+       xlabel="Age",
+       ylabel="Hear Rate")
+#add a legend
+ax1.legend(*scatter.legend_elements(), title="Target")
+
+#adding a meanline
+ax1.axhline(y=over_50["thalach"].mean(), linestyle="--");
