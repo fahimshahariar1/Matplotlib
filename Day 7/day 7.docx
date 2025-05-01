@@ -64,3 +64,6 @@ ax1.legend(*scatter.legend_elements(), title="Target")
 
 #adding a meanline
 ax1.axhline(y=over_50["thalach"].mean(), linestyle="--");
+
+We can also add a title to our figure 
+fig.suptitle('Heart Disease Analysis', fontsize = 16, fontweight = "bold");
