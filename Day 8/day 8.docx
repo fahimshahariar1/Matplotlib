@@ -7,3 +7,14 @@ We can run this command plt.style.available to check what styles we have availab
 plt.style.use('fivethirtyeight')
 car_sales["Odometer (KM)"].plot();
 if we just use it and run it will give you a different type of figure
+
+
+what if we want to change the color of the plots and legends. we can do that as well by using
+
+scatter = ax0.scatter(x=over_50["age"],
+                     y=over_50["chol"],
+                     c=over_50["target"],
+                     cmap = "winter")
+the cmap parameter. we can use summer or winter and that will give you different colors
+
+you can also find the official documentation to know more about the colorings
