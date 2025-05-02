@@ -1,1 +1,9 @@
+Now we have created different types of figures.
 
+what if we want to customize it? Try different styles and colors etc.
+Yes we can do that as well
+
+We can run this command plt.style.available to check what styles we have available and then 
+plt.style.use('fivethirtyeight')
+car_sales["Odometer (KM)"].plot();
+if we just use it and run it will give you a different type of figure
